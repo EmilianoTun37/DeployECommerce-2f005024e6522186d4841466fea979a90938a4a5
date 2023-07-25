@@ -5,12 +5,13 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist",
         "dev": "vite",
         "build": "tsc && vite build",
         "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
-        "test": "jest --env=node",
-        "deploy": "gh-pages -d dist"
+        "test": "jest --env=node"
     },
     "dependencies": {
         "@ant-design/icons": "^5.1.4",
