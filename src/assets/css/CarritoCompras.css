@@ -1,0 +1,115 @@
+.left__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrito__btn {
+    all: unset;
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    color: #00000090;
+}
+
+.carrito__btn--left {
+    background: #0994e1;
+}
+
+.carrito__btn--right {
+    background: #09e18e;
+}
+
+.producto-img {
+    height: 8rem;
+    aspect-ratio: 1/1;
+    background: #ddd;
+}
+
+.menos-cantidad {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75rem;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    background-color: #aaa;
+    font-weight: bold;
+}
+
+.mas-cantidad {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75rem;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    background-color: #aaa;
+    font-weight: bold;
+}
+
+.producto-cantidad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+.producto-quitar {
+    all: unset;
+    background: #ff000050;
+    height: 2.5rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+button {
+    cursor: pointer !important;
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: all 300ms ease;
+}
+
+.container:has(.carrito) {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+}
+
+.carrito {
+    flex: 1;
+}
+
+.carrito > div {
+    flex: 1;
+}
+
+.right .card {
+    flex: 1;
+}
+
+.item-name,
+.item-precio {
+    font-weight: 500;
+}
+
+.item-cantidad {
+    opacity: 0.7;
+}
+
+.subtotal_precio {
+    font-weight: 500;
+    font-size: 1.25rem;
+}

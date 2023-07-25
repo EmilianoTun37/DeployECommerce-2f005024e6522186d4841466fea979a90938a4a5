@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container:has(.form--login, .form--register) {
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.container:has(.form--login) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    border-radius: 10px;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+
+@media screen and (min-width: 45rem) {
+    .form {
+        background: #fff;
+        border: 1px solid rgb(0, 0, 0, 0.25);
+        filter: drop-shadow(0 0 50px rgb(0, 0, 0, 0.1));
+        max-width: 30rem;
+    }
+}
+
+@media screen and (min-width: 30rem) {
+    .form {
+        padding: 5rem 4rem;
+    }
+}
+
+.form__header {
+    display: flex;
+    align-items: center;
+}
+
+.form__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.form__input {
+    all: unset;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 0 0px #00000000;
+    transition: all 300ms;
+}
+
+.form__input:focus {
+    box-shadow: 0 0 0 5px #00000025;
+    border: 1px solid rgb(0, 0, 0, 0.75);
+}
+
+.form ::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.form__btn {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    padding-block: 0.75rem;
+    border-radius: 5px;
+    background: #79cdfc;
+    color: #0a354e;
+    font-weight: normal;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.form__btn:hover {
+    opacity: 0.75;
+}
+
+.linkBtn {
+    all: unset;
+    text-decoration: underline;
+    color: #0994e1;
+    cursor: pointer;
+}
+
+.linkBtn:hover {
+    color: #0a6fa5;
+}
+
+.form--login .linkBtn,
+.form--register .linkBtn {
+    margin-top: 2.5rem;
+}
+
+.container:has(.form--login, .form--register) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-agregar {
+    max-width: 480px;
+}
+
+.card-agregar textarea {
+    resize: none;
+    height: 16rem;
+}
+
+dialog {
+    position: absolute;
+    z-index: 999999999;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    max-width: 480px;
+    height: auto;
+    outline: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 0.25rem;
+}
+
+.edit-desc {
+    resize: none;
+    height: 8rem;
+}

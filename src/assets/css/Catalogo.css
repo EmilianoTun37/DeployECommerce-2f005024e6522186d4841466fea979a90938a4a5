@@ -1,0 +1,20 @@
+.products{
+    margin: 80px 150px;
+}
+
+.banner_product{
+    width: 100%;
+}
+
+@media (max-width: 962px) {
+    .banner_product{
+        max-width: 100%;
+    }
+    
+}
+
+@media (max-width: 962px) {
+    .products{
+        margin: 80px 20px;
+    }
+}
